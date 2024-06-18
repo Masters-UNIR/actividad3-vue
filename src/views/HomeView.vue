@@ -1,9 +1,14 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<script>
+import CarrousImagesVue from '@/components/CarrousImages.vue'
+
+export default {
+  components: {
+    CarrousImagesVue
+  }
+}
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <CarrousImagesVue />
+  <main>This is the Home Page</main>
 </template>
