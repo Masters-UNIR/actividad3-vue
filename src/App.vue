@@ -1,85 +1,98 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import InfoBarVue from '@/components/InfoBar.vue'
+
+export default {
+  name: 'App',
+  components: {
+    InfoBarVue
+  }
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <InfoBarVue />
+  <nav class="navbar navbar-expand-lg bg-success-subtle container2 mx-auto">
+    <div class="container-fluid">
+      <router-link to="/home" class="navbar-brand logo"
+        ><h1 class="titulo">
+          Mery-Lou <br />
+          Bar-Restaurant
+        </h1></router-link
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <router-link to="/home" class="nav-link active" aria-current="page">Home</router-link>
+          <router-link to="/about" class="nav-link">Sobre Nosotros</router-link>
+          <router-link to="/environment" class="nav-link">Entorno, Cultura y Ocio</router-link>
+          <router-link to="/contact" class="nav-link">Contacto</router-link>
+        </div>
+      </div>
     </div>
-  </header>
-
+  </nav>
   <RouterView />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.titulo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+  background-image: url('./assets/img/logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 190px;
+  height: 120px;
 
-nav {
-  width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
+.logo a {
   display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  padding-top: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-nav a:first-of-type {
-  border: 0;
+@media screen and (min-width: 992px) {
+  .menu-principal {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 0;
+  }
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.menu-principal li {
+  margin: 0 15px;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.menu-principal a {
+  text-decoration: none;
+  color: #333;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.menu-principal a:hover {
+  color: #f26822;
+}
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.titulo {
+  font-size: 1.6rem;
 }
 </style>
