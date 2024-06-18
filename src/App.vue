@@ -1,10 +1,12 @@
 <script>
 import InfoBarVue from '@/components/InfoBar.vue'
+import FooterPage from '@/components/FooterPage.vue'
 
 export default {
   name: 'App',
   components: {
-    InfoBarVue
+    InfoBarVue,
+    FooterPage
   }
 }
 </script>
@@ -13,12 +15,11 @@ export default {
   <InfoBarVue />
   <nav class="navbar navbar-expand-lg bg-success-subtle container2 mx-auto">
     <div class="container-fluid">
-      <router-link to="/home" class="navbar-brand logo"
-        ><h1 class="titulo">
-          Mery-Lou <br />
-          Bar-Restaurant
-        </h1></router-link
-      >
+      <router-link to="/home" class="navbar-brand logo titulo">
+        Mery-Lou <br />
+        Bar-Restaurant
+      </router-link>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -31,24 +32,51 @@ export default {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <router-link to="/home" class="nav-link active" aria-current="page">Home</router-link>
-          <router-link to="/about" class="nav-link">Sobre Nosotros</router-link>
-          <router-link to="/environment" class="nav-link">Entorno, Cultura y Ocio</router-link>
-          <router-link to="/contact" class="nav-link">Contacto</router-link>
-        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <router-link to="/home" class="nav-link active" aria-current="page"
+              ><span data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                >Home</span
+              ></router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link to="/about" class="nav-link"
+              ><span data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                >Sobre Nosotros</span
+              ></router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link to="/environment" class="nav-link"
+              ><span data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                >Entorno, Cultura y Ocio</span
+              ></router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link to="/contact" class="nav-link"
+              ><span data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                >Contacto</span
+              ></router-link
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
   <RouterView />
+  <FooterPage />
 </template>
 
 <style scoped>
 .titulo {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  padding-top: 1rem;
 }
+
 .logo {
   background-image: url('./assets/img/logo.png');
   background-repeat: no-repeat;
@@ -90,9 +118,5 @@ export default {
 
 .menu-principal a:hover {
   color: #f26822;
-}
-
-.titulo {
-  font-size: 1.6rem;
 }
 </style>
