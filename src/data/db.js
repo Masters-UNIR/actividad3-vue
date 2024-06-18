@@ -1,0 +1,179 @@
+export const firstCourse = [
+    {
+        id: 1,
+        nameCat: "Amanida de tomaque, formatge de cabra i pesto",
+        nameEsp: "Ensalada de tomate, queso de cabra y pesto",
+        nameEng: "Tomato salad, goat cheese and pesto salad",
+        nameFre: "Salade de tomates, fromage de chèvre et pesto"
+    },
+    {
+        id: 2,
+        nameCat: "Amanida de favetes, cebetes i parmesà",
+        nameEsp: "Ensalada de habas, cebollitas y parmesano",
+        nameEng: "Broad bean, chive and parmesan salad",
+        nameFre: "Salade de fèves, ciboulette et parmesan"
+    },
+    {
+        id: 3,
+        nameCat: "Amanida de carxofes, cebetes i parmesà",
+        nameEsp: "Ensalada de alcachofas, cebolletas y parmesano",
+        nameEng: "Artichoke, chive and parmesan salad",
+        nameFre: "Salade d'artichauts, ciboulette et parmesan"
+    },
+    {
+        id: 4,
+        nameCat: "Esqueixada de bacallà",
+        nameEsp: "'Esqueixada' de bacalao",
+        nameEng: "Marinated salt cod",
+        nameFre: "Petits filets de morue assalsonné en salade"
+    },
+    {
+        id: 5,
+        nameCat: "Amanida d'anxoves, tomaque, formatge i pesto",
+        nameEsp: "Ensalada de anchoas, tomate, queso y pesto",
+        nameEng: "AAnchovies salad, tomato, cheese and pesto",
+        nameFre: "Salade d'anchois, tomate, fromage et pesto"
+    },{
+        id: 6,
+        nameCat: "Pastis de carbassó i cremós de pebrot del piquillo",
+        nameEsp: "Pastel de calabacín con cremoso de pimiento del piquillo",
+        nameEng: "Courgette pie with cream of red peppers",
+        nameFre: "Courgette tarte à la crème de poivrons rouges"
+    },
+    {
+        id: 7,
+        nameCat: "Espàrrecs verds a la planxa",
+        nameEsp: "Espárragos trigueros a la plancha",
+        nameEng: "Grilled green asparagus",
+        nameFre: "Asperges vertes grillées"
+    },
+    {
+        id: 8,
+        nameCat: "Cargols",
+        nameEsp: "Caracoles",
+        nameEng: "Snails",
+        nameFre: "Escargots"
+    },
+    {
+        id: 9,
+        nameCat: "Musclos a la marinera o al vapor",
+        nameEsp: "Mejillones a la marinera o al vapor",
+        nameEng: "Steamed or \"a la marinera\" mussels",
+        nameFre: "Moules à la marinière ou à la vapeur"
+    },
+    {
+        id: 10,
+        nameCat: "Ravioli de bolets, salsa de bolets i oli de tòfona",
+        nameEsp: "Ravioli de setas, salsa de setas y aceite de trufa",
+        nameEng: "Mushroom ravioli with mushroom sauce and truffle oil",
+        nameFre: "Ravioli fourrés de champignons (de forêt), sauce aux champignons et huile de truffe"
+    },
+    {
+        id: 11,
+        nameCat: "Ravioli de botifarra negra, salsa de bolets i oli de tòfona",
+        nameEsp: "Ravioli de butifarra negra, salsa de setas y aceite de trufa",
+        nameEng: "Black pudding sausage ravioli with mushroom sauce and truffle oil",
+        nameFre: "Ravioli catalan, sauce aux champignons et huile de truffe"
+    },
+    {
+        id: 12,
+        nameCat: "Ravioli de carxofes, oli de tòfona i parmesà",
+        nameEsp: "Ravioli de alcachofas, aceite de trufa y parmesano",
+        nameEng: "Artichoke ravioli with truffle oil and parmesan",
+        nameFre: "Ravioli d'artichauts, fine huile de truffe et parmesan"
+    }
+];
+
+export const main = [
+    {
+        id: 1,
+        nameCat: "Galtes de porc",
+        nameEsp: "Carrilleras de cerdo",
+        nameEng: "Pork cheeks",
+        nameFre: "Joues de porc"
+    },
+    {
+        id: 2,
+        nameCat: "Peus de porc cruixents",
+        nameEsp: "Pies de cerdo crujientes",
+        nameEng: "Crispy pig's trotters",
+        nameFre: "Pieds de porc croustillants"
+    },
+    {
+        id: 3,
+        nameCat: "Hamburguesa de vedella de Girona amb foie",
+        nameEsp: "Hamburguesa de ternera de Girona con foie",
+        nameEng: "Girona veal burger with foie",
+        nameFre: "Hamburger de veau de Girona avec foie gras frais"
+    },
+    {
+        id: 4,
+        nameCat: "Entrecot de vedella de Girona",
+        nameEsp: "Entrecot de ternera de Girona",
+        nameEng: "Girona veal entrecote",
+        nameFre: "Entrecôte de veau de Girona"
+    },
+    {
+        id: 5,
+        nameCat: "Carpaccio de vedella",
+        nameEsp: "Carpaccio de ternera",
+        nameEng: "Veal carpaccio",
+        nameFre: "Carpaccio de veau"
+    },
+    {
+        id: 6,
+        nameCat: "Ous ferrats amb patates i foie",
+        nameEsp: "Huevos fritos con patatas y foie",
+        nameEng: "Fried eggs with potatoes and foie",
+        nameFre: "Oeufs frits avec pommes de terre et foie"
+    },
+    {
+        id: 7,
+        nameCat: "Ous ferrats amb patates i botifarra de perol",
+        nameEsp: "Huevos fritos con patatas y butifarra de perol",
+        nameEng: "Fried eggs with potatoes and black pudding",
+        nameFre: "Oeufs frits avec pommes de terre et boudin noir"
+    },
+    {
+        id: 8,
+        nameCat: "Canelons de rostit",
+        nameEsp: "Canelones de asado",
+        nameEng: "Roast meat cannelloni",
+        nameFre: "Cannellonis de rôti"
+    },
+    {
+        id: 9,
+        nameCat: "Pop a la gallega",
+        nameEsp: "Pulpo a la gallega",
+        nameEng: "Galician-style octopus",
+        nameFre: "Poulpe à la galicienne"
+    },
+    {
+        id: 10,
+        nameCat: "Peix del dia",
+        nameEsp: "Pescado del día",
+        nameEng: "Fish of the day",
+        nameFre: "Poisson frais du jour"
+    },
+    {
+        id: 11,
+        nameCat: "Gambes del golf de Roses",
+        nameEsp: "Gambas del golfo de Roses",
+        nameEng: "Shrimps from Roses Gulf",
+        nameFre: "Crevettes du golfe de Roses"
+    },
+    {
+        id: 12,
+        nameCat: "Escamarlans del golf de Roses",
+        nameEsp: "Cigalas del golfo de Roses",
+        nameEng: "Dublin Bay prawns from Roses Gulf",
+        nameFre: "Langoustines du golfe de Roses"
+    },
+    {
+        id: 13,
+        nameCat: "Fetge d'ánec",
+        nameEsp: "Hígado de pato",
+        nameEng: "Duck liver",
+        nameFre: "Foie de canard mijoté à la poêle"
+    }
+];
