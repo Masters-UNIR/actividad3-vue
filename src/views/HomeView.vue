@@ -16,11 +16,11 @@ export default {
 </script>
 
 <template>
-  <div class="container2 mx-auto">
+  <div class="container2 mx-auto p-4">
     <CarrousImagesVue />
     <div class="container2 my-5">
       <div class="row">
-        <div class="col-12 col-lg-6 p-4">
+        <div class="col-12 col-lg-6">
           <h2 class="my-4">Cocina tradicional de mercado con productos frescos</h2>
           <p>
             En nuestro restaurante podrás disfrutar de una cocina tradicional de mercado con
@@ -39,7 +39,7 @@ export default {
             title="Bogabante con huevos y patatas"
           />
         </div>
-        <div class="col-12 col-lg-6 my-4 p-4">
+        <div class="col-12 col-lg-6 my-4">
           <img
             class="w-100"
             src="../assets/img/plato_carne_1.jpg"

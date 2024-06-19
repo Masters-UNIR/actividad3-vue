@@ -1,7 +1,7 @@
 <template>
   <div
     id="carouselExampleCaptions"
-    class="carousel slide container2 mx-auto p-3"
+    class="carousel slide container2 mx-auto"
     data-bs-ride="carousel"
   >
     <div class="carousel-indicators">
