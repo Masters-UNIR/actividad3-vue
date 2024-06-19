@@ -13,7 +13,7 @@ export default {
 
 <template>
   <InfoBarVue />
-  <nav class="navbar navbar-expand-lg bg-success-subtle container2 mx-auto">
+  <nav class="navbar navbar-expand-lg bg-success-subtle container2 mx-auto menu-principal">
     <div class="container-fluid">
       <router-link to="/home" class="navbar-brand logo titulo">
         Mery-Lou <br />
@@ -116,7 +116,7 @@ export default {
   color: #333;
 }
 
-.menu-principal a:hover {
+.menu-principal a:hover span {
   color: #f26822;
 }
 </style>
