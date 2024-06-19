@@ -13,7 +13,7 @@ export default {
 
 <template>
   <InfoBarVue />
-  <nav class="navbar navbar-expand-lg bg-success-subtle container2 mx-auto menu-principal">
+  <nav class="navbar navbar-expand-lg bg-success-subtle container2 mx-auto">
     <div class="container-fluid">
       <router-link to="/home" class="navbar-brand logo titulo">
         Mery-Lou <br />
@@ -32,7 +32,7 @@ export default {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-principal">
           <li class="nav-item">
             <router-link to="/home" class="nav-link active" aria-current="page"
               ><span data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
